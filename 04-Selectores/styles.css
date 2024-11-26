@@ -42,14 +42,61 @@ elemento elementoInterno {
 }
 
   -Hijo directo
+
+   Selecciona elementos que son hijos de un elemento hijo padre.
+
+   Elemenyo > elementosHijos {
+     propiedades: valor;
+    }
+
   -Elemento Adjacente
-  -Hermano general
+
+  Selecciona el primer elemento inmediatamente despues de otros. (su hermano inmediato o en ingles Siblings)
+
+  Elemento Adjacente {
+    propiedades: valores;
+  } 
+ 
+-Hermano general
+  Selecciona todos los elementos hermanos, después de un elemento
+
+  elemento ~ elementohermano {
+  propiedad: valor;
+}
 
 5. Selectores avanzados
+  -Atributo
+
+ Selecciona elementos segun el atributo que indiquemos sin importar su valor. 
  
+ elemento [atributo] {
+  propiedad: valor
+}
+
+- Atributo - Valor
+
+Selecciona elementos según el atributo y el valor que índiquemos.
+
+elemento [atributo=valor] {
+  propiedad: valor;
+}
+
+ Selectores Avanzados
+
   -pseudo-clases
+
+  SEleccionamos elementos en un estado en particular.
+
+   elemento:pseudoclase {
+    propiedad: valor;
+}
   -pseudo-elementos
 
+  Seleccionan partes especificas de un elemento en html
+
+  elemento::pseudoelemento {
+    propiedad: valor;
+   }
 */
 
 /* 
@@ -126,4 +173,74 @@ padding: 48px;
   padding: 24px;
   background-color: darkorchid;
 
+ }
+
+ /* Combinados-Hijos directos*/
+
+ ul > li {
+   background-color: darksalmon;
+ }
+
+ .lista > li {
+font-size: 12px;
+color:indigo;
+ }
+
+ /* Combinados - Elementos Adjacente*/
+
+ h3 + ul{
+  list-style: none;
+ }
+
+ .bro + li {
+  background-color: crimson;
+ }
+
+ /* Combinado-Elementohermano*/
+
+ .bro + li ~ li {
+background-color: darkorange;
+ }
+
+ .tercero ~ li {
+  color: black;
+  font-size: 40px;
+ }
+
+
+ /* Selector de Atributo*/
+
+ a[href] {
+  display: block;
+  text-decoration: none;
+  color: crimson;
+ }
+
+ /* Selector de atributo con valor*/
+
+ a[href="https://www.instagram.com"] {
+  font-size: 48px;
+  color: chocolate;
+ }
+
+ /* Pseudo-Clase */
+
+ a:hover {
+  background-color: purple;
+  color: white;
+  text-decoration: underline;
+ }
+
+ a:focus{
+  border: 3px solid red;  
+ }
+
+ /* Pseudo-elementos*/
+
+ a::after {
+  content: "👻";
+ }
+
+ a::before {
+  content: "Este es un enlace hacia ";
  }
