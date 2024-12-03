@@ -1,0 +1,114 @@
+
+/* 
+ Fuentes personalizadas
+-Fuentes externas 
+
+Llamados desde servidores remotos.
+
+Google fonts
+
+  Es un servicio con catalogo en fuentes que podemos usar de manera gratuita en internet.
+
+  -Optimizadas para digital
+  -Gratuitas de uso comercial 
+  -De alta calidad
+  -Código de vinculación para web
+
+  https://fonts.google.com
+
+1. Seleccionar la fuente y traemos el código de incrustación o embed code al html , lo pegamos entre las etiquetas <head>
+
+2. Definimos las reglas CSS para los elementos a los que se las queremos aplicar. Usamos las propiedades de font-family, font-weigth, font-style, para las tipografias estaticas. 
+3. Declaramos en CSS font-face 
+
+@font-face {
+
+  font-family: nombrefuente; // Dospalabras entre "  "
+  scr: url (ubicación) format (formato); //Ubicación y formato entre ""
+ }
+
+ 4. Creamos la regla CSS 
+
+ selector {
+ font-family: nombreFuente, respaldo;
+ }
+
+
+  -Fuentes Internas 
+
+  Llamamos desde nuestro propio servidor o carpeta de recursos 
+
+  1. Debemos tener los archivos en una carpeta especifica.
+  2. Formatos comunes son .ttf  .otf  .woff  .woff2   etc...
+
+
+
+*/
+
+
+/* TIPOGRAFÍAS ESTÁTICAS */
+
+h1 {
+  font-family: "Playwrite Hrvatska Lijeva
+", sans-serif;
+  font-weight: 600;  /* Elige el grosor o peso de la tipografia */ 
+  font-style: italic; /*  Elige si es italica o cursiva  */
+}
+
+p {
+font-family: "Playwrite Hrvatska Lijeva
+" sans-serif;
+font-weight: 400;
+
+}
+
+ /* TIPOGRAFÍAS VARIABLES */
+
+ .title {
+  font-family: "Edu Australia VIC WA NT Hand
+" , sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+ }
+
+#title:hover {
+font-weight: 200;
+transition: font-weight 1s ease;
+
+}
+
+ #text {
+
+
+ }
+
+
+ /* Elegir 2 fuentes distintas en google fonts.
+ 
+ Una para el titulo 
+ Una para el parrafo
+ Crear la regla CSS para cada elemento con un selector de id
+ 
+ Nota: comentar los codigos de incrustación anteriores */
+
+/* Fuentes Internas  */
+
+@font-face {
+  font-family:"winter-bear" ;
+  src: url("./fonts/winter-bear.ttf"), format("ttf")
+}
+
+@font-face {
+  font-family:"super-vibes" ;
+  src: url("./fonts/super-vibes.ttf"), format("ttf")
+}
+
+#title {
+font-family: "winter-bear", sans-serif;
+
+}
+
+#text {
+font-family: "super-vibes", sans-serif;
+}
