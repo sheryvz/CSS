@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(179, 225, 227);
+}
+
+/* 
+Propiedades de texto estan relacionadas con el estilo o formato del texto.
+
+Permite controlar su apariencia, aliniación, espaciado, y decoración. 
+
+Propiedades principales:
+  -Color: define color de texto. Recibe diferentes valores: keywords, hexadecimal, rgb o rgba,hsl, transparent.
+
+  -Font-family: Nos define la familia tipografica de texto. Reciben los nombres de las familias, si sn de dos palabras entre " ", y acepta más de dos valores separados por "," como fuentes de respaldo.
+
+  -Font-size: Define el tamaño del texto. Acepta valores en px, em, rem, porcentaje, y por definido.
+  
+  -Font-style: define el estilo de fuent. Recibe los parametros: normal, itaalic y oblique.
+
+  -Text-align: Define la aliniación del texto, con los parametros: left, right, center, justify,tart y end.
+
+  -Text-decoration: Añade una linea transversal al texto. Recibe los valores; none, underline, overline, line-through.
+
+  -Text-Transform -> Controla la capitalización del texto.
+  Recibe los valores : uppercase, lowercae y capitalice
+
+  line-height -> Controla el espacio entre las lineas de texto. Recibe valores en px,%, em y rem, un valor sin unidad y esto sera relativo al tamaño de fuente.
+
+  letter-spacing : Espacio entre letras, recibe valores en px, em y rem,
+
+  word-spacing -> Espacio entre palabras . Recibe valores en px,em,rem, y el valor normal.
+
+  text-shadow -> Sombra del texto.Recibe los valores en el siguiente orden: offset-x , offset-y blur color
+     10px 10px 10px red -> 
+     Derecha y abajo
+
+     -10px -10px 10px blue ->
+     Izquierda y Arriba
+*/
+
+h1 {
+  color: rgb(135, 5, 135); /* keywords */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 64 px;
+  font-size: 100%; /* 16px=100% */
+  font-size: xx-large;
+  font-style: normal;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  letter-spacing: 1rem;
+  letter-spacing: 1em;
+  letter-spacing: -10px;
+  letter-spacing: normal;
+
+  text-shadow: 10px 8px 10px rgb(208, 31, 208);
+}   
+
+p {
+  color: blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24 px;
+  font-size: 100%;
+  font-size: x-large;
+  font-style: italic;
+  text-align: justify;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+
+  line-height: 24px;
+  line-height: 150%;
+  line-height: 4;
+  line-height: 1rem;
+  line-height: 1em;
+
+  word-spacing: 60px;
+  word-spacing: 2rem;
+  word-spacing: 5em;
+  word-spacing: normal;
+}
+
+
+
+a {
+  color: purple;
+  font-size: large;
+  text-decoration: none;
+}
