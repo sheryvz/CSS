@@ -1,0 +1,72 @@
+body {
+background-color: darkmagenta;/* no se hereda */
+color: white;/* si se hereda */
+font-family: "Poppins",sans-serif; /* si se hereda */
+height: 1000px;
+height: 100%;
+height: 100vh;
+}
+
+/*
+
+Ancho y Alto
+
+- Los elementos de bloque miden todo el ancho disponible de su contenedor.
+
+-Los elementos de línea miden el ancho de su contenido
+
+.Los elementosde bloque miden el alto de su contenido 
+
+-Los elementos de linea miden el alto de su contenido, considerando el espacio entre lineas.
+
+Width (ancho) y heigth (alto)
+
+Se usan para establecer las dimensiones de un elemento en una página web.
+
+Estás propiedades permiten definir el tamaño de los elementos, como cajas.imagenes, o contenedores de manera explicita.
+
+Width establece el ando de un elemento y podemos espedificar su dimensión horizontral con unidades como px, % ,em y rem...
+
+-Height establece la altura de un elemento y de igual manera podemos especificar su dimensión vertical con unidades como pz,%,rem,em y auto.
+
+
+*Si no se especifica la altura a un elemento de bloque, el elemento ajustara su altura al contenido.
+
+* Si usamos valores con unidades absolutas,limitamos la adaptabilidad de los elementos.Es recomendable usar unidades relativas como % o vw(viewport width)/vh (viewport higth)
+
+
+Para los elementos de linea el width y el heigth no funcionan.Por default se ajustaran a su contenido.
+
+Si queremos que un elemento de linea responda al ancho y un alto explicito,necesitamos cambiar su comportamiento de visualización a traves de la propiedad display,
+
+La propiedad display puede recibir los valores de inline-block o block
+
+
+
+*/
+
+
+.bloque {
+
+  width: 100px;/* absoluta */
+  width: 50px;/* relativa */
+  width: auto;/* default */
+
+ height: 100px;/* absolutas */
+ height: auto;/* default */
+ height: 50%; /* relativas */
+
+
+  background-color: darksalmon;
+}
+
+.línea {
+
+  display: block; /* cambia la visualización */
+  display: inline-block;
+
+  width: 100px;
+  height: 100px;
+  
+  background-color: cadetblue;
+}
